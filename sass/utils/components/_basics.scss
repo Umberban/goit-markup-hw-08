@@ -1,0 +1,57 @@
+body {
+    font-family: "roboto", sans-serif;
+    color: $main-color;
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+/* container for mark-up */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+&-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+}}
+
+/* creating flex-container */
+.features-content,
+.features-images,
+.btns-sort,
+.portfolio-img {
+    display: flex;
+}

@@ -1,0 +1,33 @@
+@import './utils/variables'; 
+// variables
+@import './utils/components/basics';
+// commons selectors
+@import './utils/components/logo';
+// all logo staff
+@import './utils/components/buttons';
+// all buttons staff
+@import './utils/components/forms';
+// all forms staff
+@import './utils/components/social-list';
+// social links styles
+
+@import './utils/components/page-header';
+// header
+@import './utils/components/page-footer';
+// footer
+
+@import './utils/components/hero-section';
+// main page hero section
+@import './utils/components/features-section';
+//main page section about our features
+@import './utils/components/team-section';
+// main page team section
+@import './utils/components/clients-section';
+// main page clients section
+@import './utils/components/modal';
+// main page modal window
+
+@import './utils/components/portfolio';
+// portfolio page portfolio section
+
+

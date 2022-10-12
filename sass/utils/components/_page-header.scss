@@ -1,0 +1,112 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__container {
+    display: flex;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: 93px;
+}
+
+.pagination__link {
+    color: $main-color;
+}
+
+.pagination__list {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.header__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-list {
+    display: flex;
+    column-gap: 50px;
+}
+
+.header__contact-list {
+    margin-left: auto;
+}
+
+.contact-list__link {
+    color:$second-color;
+}
+
+.contact-list__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contact-list__icon--mail {
+    width: 16px;
+    height: 12px;
+}
+
+.contact-list__icon--tel {
+    width: 10px;
+    height: 16px;
+}
+
+.link-hover,
+.header__link,
+.footer__link {
+    transition: color $animation-time $timing-function, fill $animation-time $timing-function;
+}
+
+.link-hover:hover,
+.link-hover:focus,
+.header__link:hover,
+.header__link:focus {
+    color: $brand-color;
+    fill: $brand-color;
+}
+
+.pagination__link--notactive {
+    position: relative;
+}
+
+[aria-current] {
+    color: $brand-color;
+    position: relative;
+}
+
+[aria-current]::after,
+.pagination__link--notactive::after {
+    content: "";
+    position: absolute;
+    bottom: -1.5px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $brand-color;
+}
+
+.pagination__link--notactive::after {
+    opacity: 0;
+    transform: scaleX(0);
+    transition: transform $animation-time $timing-function, opacity $animation-time $timing-function;
+}
+
+.pagination__link--notactive:hover::after,
+.pagination__link--notactive:focus::after {
+    opacity: 1;
+    transform: scaleX(1);
+}

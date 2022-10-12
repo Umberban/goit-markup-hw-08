@@ -1,0 +1,50 @@
+.brand-button {
+    background-color: $brand-color;
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color $animation-time $timing-function;
+    color: $white-color;
+    
+    &:hover,
+    &:focus {
+            background-color: #188CE8;
+        }
+}
+
+.btn-portfolio {
+    /*   */
+    border: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 6px 22px 6px 22px;
+    border-radius: 4px;
+    transition: background-color $animation-time $timing-function, color $animation-time $timing-function;
+&:hover,
+&:focus {
+        background-color: $brand-color;
+        /* set background "brand" color for elements  */
+    }
+}
+.btn-first {
+    padding: 6px 25px 6px 25px;
+}
+
+.btns-sort {
+    column-gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.btn-gray {
+    background-color: #F5F4FA;
+}
