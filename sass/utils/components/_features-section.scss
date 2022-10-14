@@ -5,6 +5,9 @@
     margin-bottom: 10px;
     width: 270px;
     letter-spacing: 0.03em;
+    text-align: center;
+    margin-left: auto;
+        margin-right: auto;
 }
 
 .features-image {
@@ -15,30 +18,38 @@
 .features-description {
     font-size: 14px;
     line-height: 1.71;
-    width: 270px;
+    // width: 270px;
     letter-spacing: 0.03em;
+    // text-align: center;
+    margin-left: auto;
+        margin-right: auto;
 }
 
 .features-content {
-    margin-bottom: 94px;
-    column-gap: 30px
+    // margin-bottom:60px;
+    // display: flex;
+    // column-gap: 30px
+    // margin-bottom: 94px;
 }
 
 .features-title {
-    width: 366px;
-
+    // width: 366px;
+display: none;
     margin-left: auto;
     margin-right: auto;
 }
 
 .features-images {
-    column-gap: 30px
+    display: none;
+    // display: flex;
+    // column-gap: 30px;
 }
 
 .features-li::before {
     content: "";
     display: block;
-    width: 270px;
+    width: 450px;
+    // width: 270px;
     height: 120px;
 
     margin-bottom: 30px;
@@ -47,6 +58,8 @@
     background-color: #F5F4FA;
     background-repeat: no-repeat;
     background-position: center;
+    margin-right: auto;
+    margin-left:auto;
 }
 
 .antenna-img::before {

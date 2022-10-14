@@ -31,27 +31,26 @@ button {
 
 /* container for mark-up */
 .container {
-    width: 1200px;
+    width: 480px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+        padding-bottom: 60px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
 &-title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.178;
     text-align: center;
+    letter-spacing: 0.03em;
+
+    // font-size: 36px;
+    // line-height: 1.16;
+    // text-align: center;
     margin-bottom: 50px;
 }}
-
-/* creating flex-container */
-.features-content,
-.features-images,
-.btns-sort,
-.portfolio-img {
-    display: flex;
-}
