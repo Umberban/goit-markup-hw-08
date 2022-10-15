@@ -2,11 +2,12 @@
     display: flex;
     flex-wrap:wrap;
     gap: 30px;
+    justify-content: center;
 }
 
 .clients-item {
     // width: 170px;
-    width: 210px;
+   width: 210px;
     height: 92px;
 }
 

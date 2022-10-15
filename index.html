@@ -70,6 +70,66 @@
             >
           </li>
         </ul>
+        <button class="header__open-button js-open-menu" type="button">
+          123
+        </button>
+
+        <div data-modal class="js-menu-container mobile-menu is-hidden">
+          <button class="header__close-button js-close-menu" type="button">
+            123
+          </button>
+          <div>
+            <nav>
+              <ul class="mobile-menu__nav-list">
+                <li class="mobile-menu__item">
+                  <a
+                    class="mobile-menu__nav-link mobile-menu__nav-link--current"
+                    href="./index.html"
+                    >Студія</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__nav-link" href="./portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__nav-link" href="">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <ul class="mobile-menu__contact-list">
+              <li class="mobile-menu__item">
+                <a
+                  class="mobile-menu__contact-link mobile-menu__contact-link--attention"
+                  href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a
+                  class="mobile-menu__contact-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-menu__social-list">
+              <li><a class="mobile-menu__social-link" href="">Instagram</a></li>
+              <li><a class="mobile-menu__social-link" href="">Twitter</a></li>
+              <li><a class="mobile-menu__social-link" href="">Facebook</a></li>
+              <li>
+                <a
+                  class="mobile-menu__social-link mobile-menu__social-link--no-stick"
+                  href=""
+                  >Linkedin</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -416,7 +476,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <div>
           <a class="logo footer__logo" href="index.html" lang="en"
@@ -437,7 +497,7 @@
             >
           </address>
         </div>
-        <div>
+        <div class="footer__links-container">
           <p class="footer-title">Приєднуйтесь</p>
           <ul class="social-list">
             <li class="social-list__item">
@@ -487,7 +547,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- modal window -->
     <!-- <div data-modal class="backdrop is-hidden">
       <div class="modal">
@@ -567,8 +627,9 @@
           </div>
         </form>
       </div>
-    </div>
-    <script src="./js/modal.js"></script> -->
+    </div> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
 <!--Кінець(-->

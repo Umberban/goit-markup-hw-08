@@ -31,10 +31,12 @@ button {
 
 /* container for mark-up */
 .container {
-    width: 480px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    max-width: 480px;
+
 }
 
 .section {
