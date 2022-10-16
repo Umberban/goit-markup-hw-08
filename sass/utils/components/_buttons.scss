@@ -27,11 +27,13 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+    letter-spacing: 0.03em;
     padding: 6px 22px 6px 22px;
     border-radius: 4px;
     transition: background-color $animation-time $timing-function, color $animation-time $timing-function;
 &:hover,
 &:focus {
+    color:$white-color;
         background-color: $brand-color;
         /* set background "brand" color for elements  */
     }
@@ -43,8 +45,15 @@
 .btns-sort {
     display: flex;
     column-gap: 8px;
-    justify-content: center;
-    margin-bottom: 50px;
+    row-gap:15px;
+    flex-wrap: wrap;
+    // justify-content: center;
+    // margin-bottom: 50px;
+    margin-bottom:40px;
+    @media  screen and (max-width:787px) {
+        // justify-content: flex-start;
+    max-width:400px;
+    }
 }
 .btn-gray {
     background-color: #F5F4FA;

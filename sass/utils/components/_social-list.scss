@@ -1,6 +1,7 @@
 .social-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .social-list__item {
     height: 44px;

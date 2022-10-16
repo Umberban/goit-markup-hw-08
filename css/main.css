@@ -74,10 +74,6 @@ button {
   padding-bottom: 10px;
 }
 
-.header__logo {
-  margin-right: 93px;
-}
-
 .header__logo-part {
   color: #212121;
 }
@@ -117,12 +113,14 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  letter-spacing: 0.03em;
   padding: 6px 22px 6px 22px;
   border-radius: 4px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-portfolio:hover, .btn-portfolio:focus {
+  color: #fff;
   background-color: #2196F3;
   /* set background "brand" color for elements  */
 }
@@ -138,10 +136,15 @@ button {
   -webkit-column-gap: 8px;
      -moz-column-gap: 8px;
           column-gap: 8px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  row-gap: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 787px) {
+  .btns-sort {
+    max-width: 400px;
+  }
 }
 
 .btn-gray {
@@ -174,6 +177,7 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .modal-title {
@@ -193,7 +197,7 @@ button {
 }
 
 .input-area {
-  width: 448px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -203,7 +207,7 @@ button {
 }
 
 .comment-area {
-  width: 448px;
+  width: 100%;
   height: 120px;
   padding: 12px 16px;
   font-size: 12px;
@@ -234,12 +238,17 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .policy-text,
 .policy-ref {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   padding-top: 2px;
 }
@@ -323,6 +332,8 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .social-list__item {
@@ -364,13 +375,15 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 48px 83px 48px 40px;
-  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 48px 0 48px 40px;
+  background-color: #fff;
+  visibility: hidden;
+  pointer-events: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -378,6 +391,46 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  pointer-events: all;
+  visibility: visible;
+}
+
+.header__open-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  border: none;
+}
+@media screen and (min-width: 767px) {
+  .header__open-button {
+    display: none;
+  }
+}
+
+.header__custom-icon {
+  width: 24px;
+  height: 3px;
+  background-color: #212121;
 }
 
 .header__close-button {
@@ -399,7 +452,7 @@ button {
   letter-spacing: 0.02em;
   color: #212121;
 }
-.mobile-menu__nav-link--current {
+.mobile-menu__nav-link--current, .mobile-menu__nav-link:hover {
   color: #2196F3;
 }
 
@@ -425,9 +478,8 @@ button {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mobile-menu__social-link {
@@ -472,10 +524,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.header__logo {
-  margin-right: 93px;
 }
 
 .pagination__link {
@@ -925,6 +973,8 @@ button {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 450px;
   /* width: 528px;
   height: 581px; */
   background-color: #fff;
@@ -965,4 +1015,118 @@ button {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.portfolio-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio-item {
+  width: 100%;
+  border: 1px solid #EEEEEE;
+}
+
+.visually-hidden {
+  /* there i hide some h2 sections  */
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.portfolio-h {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  /*font in portfolio  */
+}
+
+.portfolio-p {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.portfolio-link {
+  height: 100%;
+  width: 100%;
+  display: block;
+  color: #212121;
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-link:hover, .portfolio-link:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+.img-container::before {
+  content: "";
+  background-color: rgba(33, 150, 243, 0.8980392157);
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(0, 101%);
+          transform: translate(0, 101%);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img-project {
+  display: block;
+  width: 100%;
+  max-height: 294px;
+}
+
+.card-description {
+  position: absolute;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 18px;
+  line-height: 1.5555;
+  letter-spacing: 0.03em;
+  color: #fff;
+  padding: 63px 24px;
+}
+
+.portfolio-link:hover .img-container::before,
+.portfolio-link:focus .img-container::before {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.portfolio-link:hover .card-description,
+.portfolio-link:focus .card-description {
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
 }/*# sourceMappingURL=main.css.map */

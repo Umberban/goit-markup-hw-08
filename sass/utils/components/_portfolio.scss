@@ -1,11 +1,13 @@
 .portfolio-img {
     display: flex;
     flex-wrap: wrap;
-    gap: 26px;
+    gap: 30px;
+    justify-content: center;
 }
 
 .portfolio-item {
-    flex-basis: calc((100% - 60px) / 3);
+    // flex-basis: calc((100% - 60px) / 3)
+    width: 100%;
     border: 1px solid #EEEEEE;
 }
 .visually-hidden {
@@ -42,6 +44,7 @@
     height: 100%;
     width: 100%;
     display: block;
+    color:$main-color;
     transition: box-shadow $animation-time $timing-function;
 &:hover,
 &:focus {
@@ -69,6 +72,8 @@
 
 .img-project {
     display: block;
+    width: 100%;
+    max-height: 294px;
 }
 
 .card-description {

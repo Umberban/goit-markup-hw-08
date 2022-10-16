@@ -70,11 +70,18 @@
             >
           </li>
         </ul>
-        <button class="header__open-button js-open-menu" type="button">
-          123
+        <button
+          class="header__open-button js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <div class="header__custom-icon"></div>
+          <div class="header__custom-icon"></div>
+          <div class="header__custom-icon"></div>
         </button>
 
-        <div data-modal class="js-menu-container mobile-menu is-hidden">
+        <div id="mobile-menu" class="js-menu-container mobile-menu">
           <button class="header__close-button js-close-menu" type="button">
             123
           </button>
@@ -549,7 +556,7 @@
       </div>
     </footer>
     <!-- modal window -->
-    <!-- <div data-modal class="backdrop is-hidden">
+    <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close class="modal-button" type="button">
           <svg class="close-svg" width="11" height="11">
@@ -627,7 +634,7 @@
           </div>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
