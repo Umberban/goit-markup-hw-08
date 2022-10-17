@@ -13,6 +13,9 @@ flex-direction: column;
 justify-content: space-between;
 transform: translateX(100%);
 transition: visibility $animation-time $timing-function , transform $animation-time $timing-function;
+@media screen and (min-width:768px) {
+   display: none; 
+}
 }
 .is-open {
 transform: translateX(0);
@@ -31,7 +34,6 @@ transform: translateX(0);
         display: none;
     }
 }
-
 .header__custom-icon {
     width: 24px;
     height: 3px;
@@ -43,6 +45,11 @@ transform: translateX(0);
    right: 0;
    margin-top:10px;
    margin-right: 15px; 
+background-color: $white-color;
+border: none;
+&:hover{
+fill:$brand-color;
+}
 }
 .mobile-menu__item:not(:last-child){
 margin-bottom: 32px;

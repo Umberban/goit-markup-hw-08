@@ -5,9 +5,14 @@
 }
 
 .footer__container {
-    // display: flex;
     gap: 70px;
     align-items: baseline;
+    @media screen and (min-width:768px) {
+       display: flex; 
+       flex-wrap:wrap;
+       justify-content: center;
+       align-items: center;
+    }
 }
 .footer__logo{
 text-align: center;
@@ -25,10 +30,11 @@ display: block;
     margin-left: auto;
     margin-right: auto;
 }
+@media screen and (max-width:767px) {
 .footer__links-container{
 margin-bottom: 60px;
 margin-top: 60px;
-}
+}}
 .footer__link {
     font-size: 14px;
     line-height: 1.5;

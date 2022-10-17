@@ -47,13 +47,16 @@
     column-gap: 8px;
     row-gap:15px;
     flex-wrap: wrap;
-    // justify-content: center;
-    // margin-bottom: 50px;
     margin-bottom:40px;
-    @media  screen and (max-width:787px) {
-        // justify-content: flex-start;
-    max-width:400px;
+    @media  screen and (max-width:767px) {
+
+        max-width:400px;
     }
+    @media screen and (min-width:768px) {
+            justify-content: center;
+            // margin-bottom: 50px;
+
+        }
 }
 .btn-gray {
     background-color: #F5F4FA;

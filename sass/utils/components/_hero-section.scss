@@ -9,13 +9,16 @@
     margin-right: auto;
     margin-left: auto;
 max-width: 480px;
+@media screen and (min-width:768px) {
+    max-width:768px 
+}
 
     // padding: 200px 0;
 & .brand-button {
 
             padding: 10px 24px;
 
-    // padding: 10px 32px;
+            // padding: 10px 32px;
 }}
 .hero-title {
     text-align: center;
@@ -28,7 +31,9 @@ max-width: 480px;
         font-size: 26px;
         line-height: 1.61;
         letter-spacing: 0.06em;
-
+@media screen and (min-width:768px) {
+        max-width: 360px
+    }
     // font-size: 44px;
     // line-height: 1.38;
     // letter-spacing: 0.06em;
