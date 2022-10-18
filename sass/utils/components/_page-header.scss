@@ -17,10 +17,13 @@
 }
 
 .header__logo {
-    // margin-right: 93px;
     @media screen and (min-width: 768px){
         margin-right: 88px;
     }
+    @media screen and (min-width:1200px) {
+            margin-right: 93px;
+
+        }
 }
 
 .pagination__link {
@@ -50,13 +53,18 @@
 
 .contact-list {
     display: none;
-    // column-gap: 50px;
+    
     @media screen and (min-width:768px) {
         gap:10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }}
+    }
+@media screen and (min-width:1200px) {
+    flex-direction: row;
+    gap:50px;
+    align-items: center;
+}}
 .header__contact-list {
     margin-left: auto;
 }
@@ -68,7 +76,6 @@
     font-weight: 500;
         font-size: 12px;
         line-height: 1.1;
-    
         letter-spacing: 0.02em;
     }
 }

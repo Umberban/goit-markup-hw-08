@@ -53,10 +53,21 @@ button {
     max-width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .section-title {
   font-weight: 700;
@@ -65,6 +76,13 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+  }
 }
 
 .logo {
@@ -264,6 +282,13 @@ button {
   letter-spacing: 0.03em;
   padding-top: 2px;
 }
+@media screen and (min-width: 1200px) {
+  .policy-text,
+.policy-ref {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 
 .policy-ref {
   color: #2196F3;
@@ -320,8 +345,13 @@ button {
   fill: #2196F3;
 }
 
-.subscribe-form {
-  gap: 12px;
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
+  }
 }
 .subscribe-form__input {
   width: 100%;
@@ -339,6 +369,11 @@ button {
 @media screen and (min-width: 768px) {
   .subscribe-form__input {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form__input {
+    width: 358px;
   }
 }
 
@@ -565,6 +600,11 @@ button {
     margin-right: 88px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
+}
 
 .pagination__link {
   color: #212121;
@@ -618,6 +658,18 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -744,6 +796,18 @@ button {
             align-items: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+  }
+}
 
 .footer__logo {
   text-align: center;
@@ -803,7 +867,11 @@ button {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .footer-title {
+    text-align: center;
+  }
 }
 
 .footer__social-link {
@@ -836,6 +904,7 @@ button {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  height: 100%;
 }
 
 .footer__subscribe-icon {
@@ -859,8 +928,19 @@ button {
     max-width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    padding: 200px 0;
+    max-width: 100%;
+  }
+}
 .hero-section .brand-button {
   padding: 10px 24px;
+}
+@media screen and (min-width: 1200px) {
+  .hero-section .brand-button {
+    padding: 10px 32px;
+  }
 }
 
 .hero-title {
@@ -880,6 +960,14 @@ button {
     max-width: 360px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.38;
+    letter-spacing: 0.06em;
+    max-width: 696px;
+  }
+}
 
 .features-subtitle {
   font-weight: 700;
@@ -890,6 +978,11 @@ button {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .features-subtitle {
+    text-align: start;
+  }
 }
 
 .features-image {
@@ -903,6 +996,7 @@ button {
   letter-spacing: 0.03em;
   margin-left: auto;
   margin-right: auto;
+  color: #757575;
 }
 
 .features-content {
@@ -915,15 +1009,35 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media screen and (min-width: 1200px) {
+  .features-content {
+    margin-bottom: 94px;
+  }
+}
 
 .features-title {
   display: none;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 1200px) {
+  .features-title {
+    display: block;
+  }
+}
 
 .features-images {
   display: none;
+}
+@media screen and (min-width: 1200px) {
+  .features-images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
 }
 
 .features-li {
@@ -934,11 +1048,17 @@ button {
     max-width: 354px;
   }
 }
-
-.features-li:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .features-li {
+    max-width: 270px;
+  }
 }
 
+@media screen and (max-width: 1200px) {
+  .features-li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .features-li::before {
   content: "";
   display: block;
@@ -1003,6 +1123,12 @@ button {
         flex-basis: calc((100% - 30px) / 2);
   }
 }
+@media screen and (min-width: 1200px) {
+  .team-section__card-list {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
+}
 
 @media screen and (min-width: 768px) {
   .team-card:nth-child(even) {
@@ -1015,6 +1141,11 @@ button {
 @media screen and (max-width: 767px) {
   .team-card:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-card:not(:first-child) {
+    margin-left: 30px;
   }
 }
 .team-card {
@@ -1030,6 +1161,11 @@ button {
     max-width: 354px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team-card {
+    max-width: 270px;
+  }
+}
 .team-card__image {
   display: block;
   margin-bottom: 30px;
@@ -1039,6 +1175,11 @@ button {
 @media screen and (min-width: 768px) {
   .team-card__image {
     height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-card__image {
+    height: 260px;
   }
 }
 .team-card__name {
@@ -1070,6 +1211,11 @@ button {
 .clients-item {
   width: 210px;
   height: 92px;
+}
+@media screen and (min-width: 1200px) {
+  .clients-item {
+    width: 170px;
+  }
 }
 
 .clients-link {
@@ -1128,6 +1274,12 @@ button {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
+  }
+}
 
 .modal-button {
   position: absolute;
@@ -1183,6 +1335,12 @@ button {
         flex-basis: calc((100% - 30px) / 2);
   }
 }
+@media screen and (min-width: 1200px) {
+  .portfolio-item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+}
 
 .visually-hidden {
   /* there i hide some h2 sections  */
@@ -1211,6 +1369,7 @@ button {
   margin-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
+  color: #757575;
 }
 
 .portfolio-link {

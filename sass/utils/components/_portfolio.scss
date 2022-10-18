@@ -9,6 +9,7 @@
     width: 100%;
     border: 1px solid #EEEEEE;
     @media screen and (min-width:768px) {flex-basis: calc((100% - 30px) / 2);}
+        @media screen and (min-width:1200px) {flex-basis: calc((100% - 60px) / 3);}
 }
 .visually-hidden {
     /* there i hide some h2 sections  */
@@ -37,7 +38,7 @@
     margin-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
-
+color:$second-color;
 }
 
 .portfolio-link {
