@@ -1265,9 +1265,11 @@ button {
           justify-content: center;
 }
 
-.clients-item {
-  width: 210px;
-  height: 92px;
+@media screen and (min-width: 480px) {
+  .clients-item {
+    width: 210px;
+    height: 92px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .clients-item {
