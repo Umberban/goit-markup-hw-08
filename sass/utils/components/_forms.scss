@@ -45,9 +45,7 @@
     border-radius: 4px;
     transition: border $animation-time $timing-function;
     padding: 12px 42px;
-    @media screen and (max-height: 556px),(max-width:340px) {
-            height: 20px;
-    }
+   
 }
 
 .comment-area {
@@ -62,20 +60,12 @@
     margin-bottom: 20px;
     resize: none;
     transition: border $animation-time $timing-function;
-    @media screen and (max-height:556px),(max-width:340px) {
-            height: 50px;
-            margin-bottom:0px;
-        }
+
 }
 
 .modal-input .brand-button {
     margin-top: 30px;
     padding: 10px 52px;
-    @media screen and (max-height: 556px),(max-width:340px) {
-           margin-top:0;
-           padding: 10px 10px;
-           font-size:12px;
-        }
 }
 
 .input-area:focus,
