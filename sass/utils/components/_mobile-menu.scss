@@ -30,7 +30,7 @@ transform: translateX(0);
     background-color: $white-color;
     border: none;
 
-    @media screen and (min-width:767px) {
+    @media screen and (min-width:768px) {
         display: none;
     }
 }
@@ -64,10 +64,16 @@ margin-bottom: 32px;
     &--current,&:hover{
     color:$brand-color; 
     }
+        @media screen and (max-width:340px) {
+            font-size: 28px;
+        }
 }
 .mobile-menu__contact-list{
     margin-bottom:63px;
-
+    
+@media screen and (max-width:340px) {
+        margin-bottom:30px;
+    }
 }
 .mobile-menu__contact-link{
 font-weight: 500;
@@ -75,10 +81,16 @@ font-weight: 500;
     line-height: 1.16;
     letter-spacing: 0.02em;
     color:$second-color;
+    @media screen and (max-width:340px) {
+            font-size: 18px;
+        }
 }
 .mobile-menu__contact-link--attention{
 font-size: 34px;
 color:$brand-color;
+@media screen and (max-width:340px) {
+font-size:18px;    
+}
 }
 .mobile-menu__social-list{
 display: flex;

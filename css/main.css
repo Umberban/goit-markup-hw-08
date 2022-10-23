@@ -218,6 +218,11 @@ button {
   letter-spacing: 0.03em;
   margin-bottom: 12px;
 }
+@media screen and (max-height: 556px), (max-width: 340px) {
+  .modal-title {
+    font-size: 12px;
+  }
+}
 
 .modal-label {
   font-size: 12px;
@@ -235,6 +240,11 @@ button {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 12px 42px;
 }
+@media screen and (max-height: 556px), (max-width: 340px) {
+  .input-area {
+    height: 20px;
+  }
+}
 
 .comment-area {
   width: 100%;
@@ -249,10 +259,23 @@ button {
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-height: 556px), (max-width: 340px) {
+  .comment-area {
+    height: 50px;
+    margin-bottom: 0px;
+  }
+}
 
 .modal-input .brand-button {
   margin-top: 30px;
   padding: 10px 52px;
+}
+@media screen and (max-height: 556px), (max-width: 340px) {
+  .modal-input .brand-button {
+    margin-top: 0;
+    padding: 10px 10px;
+    font-size: 12px;
+  }
 }
 
 .input-area:focus,
@@ -270,9 +293,6 @@ button {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .policy-text,
@@ -281,6 +301,7 @@ button {
   line-height: 1.16;
   letter-spacing: 0.03em;
   padding-top: 2px;
+  display: inline-block;
 }
 @media screen and (min-width: 1200px) {
   .policy-text,
@@ -298,7 +319,7 @@ button {
 }
 
 .checkbox-icon {
-  display: block;
+  display: inline-block;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
@@ -323,6 +344,10 @@ button {
   -moz-appearance: none;
   appearance: none;
   position: absolute;
+}
+
+.modal-input input[type=checkbox]:focus + .checkbox-icon {
+  border: 2px solid #2196F3;
 }
 
 .input-svg {
@@ -478,7 +503,7 @@ button {
   background-color: #fff;
   border: none;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .header__open-button {
     display: none;
   }
@@ -517,9 +542,19 @@ button {
 .mobile-menu__nav-link--current, .mobile-menu__nav-link:hover {
   color: #2196F3;
 }
+@media screen and (max-width: 340px) {
+  .mobile-menu__nav-link {
+    font-size: 28px;
+  }
+}
 
 .mobile-menu__contact-list {
   margin-bottom: 63px;
+}
+@media screen and (max-width: 340px) {
+  .mobile-menu__contact-list {
+    margin-bottom: 30px;
+  }
 }
 
 .mobile-menu__contact-link {
@@ -529,10 +564,20 @@ button {
   letter-spacing: 0.02em;
   color: #757575;
 }
+@media screen and (max-width: 340px) {
+  .mobile-menu__contact-link {
+    font-size: 18px;
+  }
+}
 
 .mobile-menu__contact-link--attention {
   font-size: 34px;
   color: #2196F3;
+}
+@media screen and (max-width: 340px) {
+  .mobile-menu__contact-link--attention {
+    font-size: 18px;
+  }
 }
 
 .mobile-menu__social-list {
@@ -1264,6 +1309,7 @@ button {
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 .is-hidden {
@@ -1438,6 +1484,12 @@ button {
   letter-spacing: 0.03em;
   color: #fff;
   padding: 63px 24px;
+}
+@media screen and (max-width: 340px) {
+  .card-description {
+    padding: 20px;
+    font-size: 12px;
+  }
 }
 
 .portfolio-link:hover .img-container::before,

@@ -25,7 +25,9 @@
     letter-spacing: 0.03em;
 
     margin-bottom: 12px;
-}
+@media screen and (max-height: 556px) , (max-width:340px) {
+        font-size: 12px;
+}}
 
 .modal-label {
     font-size: 12px;
@@ -43,6 +45,9 @@
     border-radius: 4px;
     transition: border $animation-time $timing-function;
     padding: 12px 42px;
+    @media screen and (max-height: 556px),(max-width:340px) {
+            height: 20px;
+    }
 }
 
 .comment-area {
@@ -57,11 +62,20 @@
     margin-bottom: 20px;
     resize: none;
     transition: border $animation-time $timing-function;
+    @media screen and (max-height:556px),(max-width:340px) {
+            height: 50px;
+            margin-bottom:0px;
+        }
 }
 
 .modal-input .brand-button {
     margin-top: 30px;
     padding: 10px 52px;
+    @media screen and (max-height: 556px),(max-width:340px) {
+           margin-top:0;
+           padding: 10px 10px;
+           font-size:12px;
+        }
 }
 
 .input-area:focus,
@@ -74,7 +88,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content:center;
+    // justify-content:center;
 }
 
 .policy-text,
@@ -83,6 +97,7 @@
     line-height: 1.16;
     letter-spacing: 0.03em;
     padding-top: 2px;
+    display: inline-block;
     @media screen and (min-width:1200px) {
         font-size: 14px;
         line-height: 1.71;
@@ -97,7 +112,7 @@
 }
 
 .checkbox-icon {
-    display: block;
+    display: inline-block;
     width: 16px;
     height: 15px;
     border: 2px solid $main-color;
@@ -122,7 +137,8 @@
     appearance: none;
     position: absolute;
 }
-
+.modal-input input[type="checkbox"]:focus+.checkbox-icon{
+border: 2px solid $brand-color;}
 .input-svg {
     position: relative;
 }
